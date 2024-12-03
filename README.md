@@ -2,7 +2,12 @@
 # Final Project Code
 ### Jialin Li, Yuming Wang
 
-Example:
+
+Data and label preprocessing:
+1. annotation_2.ipynb
+2. annotation_3.ipynb
+
+Model Example:
 1. The Swin-transformer model is  at "dpcv/modeling/networks/swin_transformer.py"
 2. The trainer is at  "dpcv/engine/bi_modal_trainer.py"
 3. The runner is at "dpcv/experiment/exp_runner.py"
