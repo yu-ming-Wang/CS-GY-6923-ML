@@ -1,0 +1,18 @@
+DATA:
+  TRAIN_LABEL_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/annotation_3/annotation_train_3.pkl"
+  VALID_LABEL_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/annotation_3/annotation_valid_3.pkl"
+  TEST_LABEL_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/annotation_3/annotation_test_3.pkl"
+  TRAIN_IMG_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/train_3_data"
+  VALID_IMG_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/valid_3_data"
+  TEST_IMG_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/test_3_data"
+DATA_LOADER:
+  TRAIN_BATCH_SIZE: 24
+MODEL:
+  NAME: "hr_net_model"
+  WEIGHT_PATH: "/scratch/yw8988/DeepPersonality-main/pre_trained_weights/hrnetv2_w18_imagenet_pretrained.pth"
+  RETURN_FEATURE: False
+SOLVER:
+  LR_INIT: 0.001
+TRAIN:
+  OUTPUT_DIR: "results/unified_frame_images/MOSE_09_hrnet_Alia_test"
+  MAX_EPOCH: 30

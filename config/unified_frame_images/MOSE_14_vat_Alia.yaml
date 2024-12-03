@@ -1,0 +1,16 @@
+DATA:
+  TRAIN_LABEL_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/new_annotation/annotation_train_2.pkl"
+  VALID_LABEL_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/new_annotation/annotation_valid_2.pkl"
+  TEST_LABEL_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/new_annotation/annotation_test_2.pkl"
+  TRAIN_IMG_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/new_train_data"
+  VALID_IMG_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/new_valid_data"
+  TEST_IMG_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/new_test_data"
+
+DATA_LOADER:
+  NAME: "vat_data_loader"
+  TRANSFORM: "set_vat_transform_op"
+  TRAIN_BATCH_SIZE: 4
+MODEL:
+  NAME: "vat_model"
+TRAIN:
+  OUTPUT_DIR: "results/unified_frame_images/MOSE_14_vat_Alia"

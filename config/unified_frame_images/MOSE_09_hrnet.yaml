@@ -1,0 +1,14 @@
+DATA:
+  TRAIN_LABEL_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/annotation/annotation_train.pkl"
+  VALID_LABEL_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/annotation/annotation_valid.pkl"
+  TEST_LABEL_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/annotation/annotation_test.pkl"
+  TRAIN_IMG_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/train_data"
+  VALID_IMG_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/valid_data"
+  TEST_IMG_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/test_data"
+DATA_LOADER:
+  TRAIN_BATCH_SIZE: 24
+MODEL:
+  NAME: "hr_net_model"
+TRAIN:
+  OUTPUT_DIR: "results/unified_frame_images/MOSE_09_hrnet"
+  MAX_EPOCH: 30

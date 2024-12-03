@@ -1,0 +1,12 @@
+DATA:
+  TRAIN_LABEL_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/new_annotation/annotation_train_2.pkl"
+  VALID_LABEL_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/new_annotation/annotation_valid_2.pkl"
+  TEST_LABEL_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/new_annotation/annotation_test_2.pkl"
+  TRAIN_IMG_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/new_train_data"
+  VALID_IMG_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/new_valid_data"
+  TEST_IMG_DATA: "/scratch/jl10897/DeepPersonality-main/datasets/MOSE/new_test_data"
+MODEL:
+  NAME: "se_resnet50"
+TRAIN:
+  MAX_EPOCH: 30
+  OUTPUT_DIR: "results/unified_frame_images/MOSE_08_senet_Alia"

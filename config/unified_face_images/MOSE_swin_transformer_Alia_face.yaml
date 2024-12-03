@@ -1,0 +1,16 @@
+DATA:
+  TRAIN_IMG_DATA: "/scratch/yw8988/DeepPersonality-main/datasets/MOSE/train_3_face"
+  VALID_IMG_DATA: "/scratch/yw8988/DeepPersonality-main/datasets/MOSE/valid_3_face"
+  TEST_IMG_DATA: "/scratch/yw8988/DeepPersonality-main/datasets/MOSE/test_3_face"
+  TRAIN_LABEL_DATA: "/scratch/yw8988/DeepPersonality-main/datasets/MOSE/annotation_3/annotation_train_3.pkl"
+  VALID_LABEL_DATA: "/scratch/yw8988/DeepPersonality-main/datasets/MOSE/annotation_3/annotation_valid_3.pkl"
+  TEST_LABEL_DATA: "/scratch/yw8988/DeepPersonality-main/datasets/MOSE/annotation_3/annotation_test_3.pkl"
+DATA_LOADER:
+  NAME: "single_frame_data_loader"
+  TRANSFORM: "face_image_x2_transform"
+  TRAIN_BATCH_SIZE: 24
+MODEL:
+  NAME: "swin_transformer_model"
+  WEIGHT_PATH: "/scratch/yw8988/DeepPersonality-main/pre_trained_weights/swin_small_patch4_window7_224.pth"
+TRAIN:
+  OUTPUT_DIR: "results/unified_face_images/MOSE_swin_transformer_Alia_face"

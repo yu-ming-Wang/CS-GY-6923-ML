@@ -1,0 +1,13 @@
+DATA:
+  TRAIN_LABEL_DATA: "ChaLearn2016_tiny/annotation/annotation_training.pkl"
+  VALID_LABEL_DATA: "ChaLearn2016_tiny/annotation/annotation_validation.pkl"
+  TEST_LABEL_DATA: "ChaLearn2016_tiny/annotation/annotation_test.pkl"
+  TRAIN_IMG_DATA: "ChaLearn2016_tiny/train_data"
+  VALID_IMG_DATA: "ChaLearn2016_tiny/valid_data"
+  TEST_IMG_DATA: "ChaLearn2016_tiny/test_data"
+DATA_LOADER:
+  TRAIN_BATCH_SIZE: 24
+MODEL:
+  NAME: "swin_transformer_model"
+TRAIN:
+  OUTPUT_DIR: "results/unified_frame_images/10_swin_transformer"
