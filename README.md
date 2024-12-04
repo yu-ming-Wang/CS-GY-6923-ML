@@ -4,9 +4,10 @@
 
 
 Data and label preprocessing:
-1. annotation_2.ipynb
-2. annotation_3.ipynb
-
+1. annotation.ipynb
+2. annotation_2.ipynb
+3. annotattion_3.ipynb
+   
 Model Example:
 1. The Swin-transformer model is  at "dpcv/modeling/networks/swin_transformer.py"
 2. The trainer is at  "dpcv/engine/bi_modal_trainer.py"
